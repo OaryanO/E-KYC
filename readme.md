@@ -8,24 +8,9 @@ The E-KYC web application provides an interactive user interface where users can
 ### Features
 
 1. **Face Verification**: The app computes the face from the provided ID card using Haarcascade and matches it with the uploaded photograph. If the verification status is successful, subsequent operations are carried out; otherwise, an error is generated.
-   
-## Face Verification Demo
-
-![E-KYC-FACE VERIFICATION DEMO](https://github.com/abhishekiiitbh2903/E-KYC-/blob/main/assets/Face%20Verification.gif)
-
-
-Herein, I have uploaded an ID card of my dad and an image of myself. As a result, the face verification fails, and as stated above, the subsequent codes do not execute.
-
 2. **Optical Character Recognition (OCR)**: If face verification is successful, the app uses EasyOCR with a predefined threshold value to extract text from the ID card.
 3. **Database Interaction**: The extracted text and face embeddings are checked for duplicacy before being inserted into the database. If the user is already registered, the SQL query is not executed, and the fetched result is returned.
 4. **Face Embeddings**: The app uses FaceNet from DeepFace to retrieve face embeddings, which are also stored in the database.
-
-## Full Workflow of web app
-
-![Full Workflow](https://github.com/abhishekiiitbh2903/E-KYC-/blob/main/assets/Full%20Workflow.gif)
-
-I first uploaded my Aadhar ID and a photo of my dad. The app flagged a warning as face verification failed, and subsequent code didn't execute. Then, I uploaded my own face image, the verification succeeded, and my data was inserted into the database. To check for duplicacy and confirm my data was correctly inserted, I reuploaded my face image. The response indicated that a person with my ID already exists in the database, validating proper database handling and ensuring no data duplicacy.
-
 
 ### Technologies Used
 
@@ -53,8 +38,8 @@ Ensure you have the following installed:
 
 1. **Clone the Repository**:
     ```sh
-    https://github.com/abhishekiiitbh2903/E-KYC-.git
-    cd E-KYC-
+    https://github.com/OaryanO/E-KYC.git
+    cd E-KYC
     ```
 
 2. **Create a Virtual Environment**:
@@ -128,7 +113,7 @@ Feel free to open an issue if you encounter any problems or have questions about
 
 ## Author
 
-This project is authored by Abhishek Singh, a final year B.Tech CSE undergraduate at IIIT Bhagalpur. You can reach me at abhishekrathore1806@gmail.com.
+This project is authored by Aryan Singh, a final year B.Tech CSE undergraduate at IIIT Bhagalpur. You can reach me at aryaning19@gmail.com.
 
 ## Contributing
 
